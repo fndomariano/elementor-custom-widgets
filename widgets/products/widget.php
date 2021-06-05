@@ -11,7 +11,7 @@ class Products extends \Elementor\Widget_Base {
 	}
 
     public function get_title() {
-		return __( 'Products' );
+		return 'Products';
 	}
 
     public function get_icon() {
@@ -27,14 +27,14 @@ class Products extends \Elementor\Widget_Base {
         $this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Content' ),
+				'label' => 'Content',
 			]
 		);
 
 		$this->add_control(
 			'number_registers',
 			[
-				'label' => __( 'Number registers' ),
+				'label' => 'Number registers',
 				'type' => Controls_Manager::NUMBER,
 				'default' => 5
 			]
